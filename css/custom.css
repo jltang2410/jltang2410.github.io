@@ -1,0 +1,17 @@
+/* Preserve newlines in the About intro configured in _config.yml */
+.about .intro,
+.about-intro,
+.about__intro,
+.about .about-intro {
+  white-space: pre-line;
+}
+
+/* Fallback: ensure long lines wrap on small screens */
+@media (max-width: 600px) {
+  .about .intro,
+  .about-intro,
+  .about__intro,
+  .about .about-intro {
+    word-break: break-word;
+  }
+}
